@@ -1,0 +1,97 @@
+.bestSellers {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    margin-top: 100px;                                                                       
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.image {
+    width: 536px;
+    height: 489px;
+    object-fit: cover;
+}
+
+.featuredCard {
+    animation: productFadeIn 260ms ease;
+}
+
+.images {
+    width: 258px;
+    height: 193px;
+    object-fit: cover;
+}
+
+.productList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    animation: productFadeIn 260ms ease;
+}
+
+.productItem img {
+    transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.productItem:hover img,
+.productItem:focus-visible img {
+    opacity: 0.86;
+    transform: translateY(-2px);
+}
+
+.productItem:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 6px;
+}
+
+.description {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.price {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+@keyframes productFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

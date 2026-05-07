@@ -1,0 +1,86 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 0;
+}
+
+.container {
+  width: 1320px;
+  height: 530px;
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 310px 648px 312px;
+  gap: 25px;
+  position: relative;
+}
+.left {
+  display: flex;
+  align-items: end;
+  
+}
+
+.center img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card button {
+  width: 224px;
+  height: 50px;
+  background: #0a224a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.hero h1 {
+  position: absolute;
+  width: 648px;
+  height: 150px;
+  z-index: 10;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 75PX;
+  color: #0a224a;
+  pointer-events: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  position: relative; 
+}
+
+.button {
+    width: 224px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+    background-color: var(--bg-hover);
+}

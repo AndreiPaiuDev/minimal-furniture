@@ -1,0 +1,85 @@
+.about {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 536px;
+    height: 540px;
+}
+
+.left {
+    width: 760px;
+    height: 500px;
+    padding: 36px 69px 34px 69px;
+    background-color: var(--bg-accent);
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.sectionTitle p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-text);
+}
+
+.line {
+    border: 1px solid var(--color-text);
+    width: 30px;
+}
+
+
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 30px;
+}
+
+
+.list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none; 
+}
+
+.list li {
+    text-align: center;
+}
+
+.listTitle {
+    font-size: 50px;
+    line-height: 75px;
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+.listDescription {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 20px;
+}

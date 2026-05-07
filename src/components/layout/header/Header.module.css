@@ -1,0 +1,29 @@
+header {
+    background-color: var(--bg-accent);
+    width: 100%;
+}
+.headerContainer {
+    max-width: var(--container-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.nav {
+    display: flex;
+    width: min(100%, 560px);
+    justify-content: space-between;
+    gap: 30px;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
